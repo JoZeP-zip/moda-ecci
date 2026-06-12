@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web informativo sobre la experiencia académica Moda ECCI — Lenguaje del Color. SENA CMTC 2025." />
+  <title>Moda ECCI — Lenguaje del Color</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+  <!-- NAVBAR -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-txt" href="#hero">Moda ECCI</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teoria">Color</a></li>
+          <li class="nav-item"><a class="nav-link" href="#glosario">Glosario</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sostenibilidad">Sostenibilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <!-- Panel izquierdo: imagen real del evento -->
+    <div class="hero-left">
+      <img src="img/Hero.png" alt="Lenguaje del Color — Moda ECCI" />
+    </div>
+
+    <!-- Panel derecho: texto sobre fondo patrón -->
+    <div class="hero-right">
+      <div class="hero-right-inner reveal">
+        <p class="hero-eyebrow">Evento académico · SENA CMTC · 2025</p>
+        <h1 class="hero-title">
+          Lenguaje<br/>
+          <em>del Color</em>
+        </h1>
+        <p class="hero-subtitle">
+          Una inmersión entre semiología visual, teoría del color y diseño
+          de experiencias digitales, vivida en el evento Moda ECCI.
+        </p>
+        <a href="#experiencia" class="btn-hero">Explorar experiencia</a>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       EXPERIENCIA — Cards + Accordion (Bootstrap)
+  ══════════════════════════════════════════════════ -->
+  <section id="experiencia" class="section-pad">
+    <div class="container">
+
+      <span class="eyebrow reveal">Mi experiencia en Moda ECCI</span>
+      <h2 class="section-title reveal">Un encuentro entre<br/>moda y tecnología</h2>
+      <div class="gold-rule reveal"></div>
+      <p class="lead-text reveal">
+        Participar en el evento Moda ECCI fue una experiencia que amplió mi visión sobre cómo el diseño
+        visual y la industria creativa se conectan profundamente con el desarrollo de software.
+        La conferencia de <strong>Sara Viloria</strong> sobre el lenguaje del color abrió nuevas
+        perspectivas para pensar en interfaces digitales, paletas de marca y comunicación visual.
+      </p>
+      <p class="lead-text reveal mt-3">
+        <em>Attending Moda ECCI was a transformative experience that broadened my understanding of how
+        visual design and the creative industry connect deeply with software development. Sara Viloria's
+        keynote on color language opened new perspectives for thinking about digital interfaces, brand
+        palettes, and visual communication.</em>
+      </p>
+
+      <!-- Bootstrap Cards Grid -->
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card exp-card-custom p-4">
+            <div class="card-icon">🎨</div>
+            <h5 class="card-title">Aprendizajes obtenidos</h5>
+            <p class="card-text">
+              Comprendí cómo la teoría del color —rueda cromática, contrastes, armonías— se aplica
+              directamente al diseño de interfaces. Pantone como lenguaje universal del color fue una
+              revelación: en software, los design tokens cumplen la misma función.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card exp-card-custom p-4">
+            <div class="card-icon">✨</div>
+            <h5 class="card-title">Aspectos destacados</h5>
+            <p class="card-text">
+              La arquitectura del espacio comunicaba antes de leer una sola palabra: los anillos de luz
+              dorada, la estatua clásica, los módulos de diseño estudiantil. El evento demostró que la
+              puesta en escena —como la UI— es comunicación.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card exp-card-custom p-4">
+            <div class="card-icon">💻</div>
+            <h5 class="card-title">Moda y software</h5>
+            <p class="card-text">
+              Ambas industrias trabajan con sistemas de diseño, identidad visual y ciclos de iteración.
+              El diseño de una colección y el de un producto digital comparten la misma lógica:
+              brief → prototipo → entrega → evaluación.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card exp-card-custom p-4">
+            <div class="card-icon">🌱</div>
+            <h5 class="card-title">Reflexión profesional</h5>
+            <p class="card-text">
+              Espacios como Moda ECCI demuestran que la formación técnica gana profundidad cuando sale
+              del aula. Observar el trabajo con criterio real aporta referentes visuales que ningún
+              tutorial puede reemplazar.
+            </p>
+          </div>
+        </div>
+      </div><!-- /row cards -->
+
+      <!-- Bootstrap Accordion: conferencia bilingüe -->
+      <h3 class="section-title mt-5 mb-3 reveal" style="font-size:1.6rem;">
+        Resumen de la conferencia
+      </h3>
+      <div class="accordion accordion-custom reveal" id="accordionConferencia">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#conf1">
+              🇪🇸 Color en experiencia de usuario
+            </button>
+          </h2>
+          <div id="conf1" class="accordion-collapse collapse show"
+               data-bs-parent="#accordionConferencia">
+            <div class="accordion-body">
+              El color no es solo estética: es información. En una interfaz digital, el color define
+              jerarquía, guía la atención, comunica estados (éxito, error, advertencia) y construye
+              confianza. La conferencia mostró cómo un esquema cromático mal elegido puede elevar la
+              tasa de abandono de una aplicación hasta un 38%.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#conf2">
+              🇬🇧 Color in User Experience
+            </button>
+          </h2>
+          <div id="conf2" class="accordion-collapse collapse"
+               data-bs-parent="#accordionConferencia">
+            <div class="accordion-body">
+              Color is not merely aesthetic: it is information. In a digital interface, color defines
+              hierarchy, guides attention, communicates states (success, error, warning) and builds
+              trust. The conference demonstrated how a poorly chosen color scheme can increase an
+              application's abandonment rate by up to 38%.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#conf3">
+              🇪🇸 Importancia de Pantone y semiología visual
+            </button>
+          </h2>
+          <div id="conf3" class="accordion-collapse collapse"
+               data-bs-parent="#accordionConferencia">
+            <div class="accordion-body">
+              El sistema Pantone garantiza que un color sea idéntico sin importar el medio o el país.
+              En diseño digital su equivalente son los design tokens: variables que almacenan los
+              colores y garantizan coherencia en toda la aplicación. La semiología visual estudia qué
+              significan los colores culturalmente; rojo puede significar peligro o pasión según el
+              contexto.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#conf4">
+              🇬🇧 Importance of Pantone and Visual Semiology
+            </button>
+          </h2>
+          <div id="conf4" class="accordion-collapse collapse"
+               data-bs-parent="#accordionConferencia">
+            <div class="accordion-body">
+              The Pantone system ensures that a color is identical regardless of the medium or country.
+              In digital design, its equivalent is design tokens: variables that store colors and
+              guarantee consistency across the entire application. Visual semiology studies what colors
+              mean culturally; red can mean danger or passion depending on context.
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /accordion -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       GALERÍA — Bootstrap Carousel + Modal
+  ══════════════════════════════════════════════════ -->
+  <section id="galeria" class="section-pad">
+    <div class="container">
+      <span class="eyebrow reveal">Registro visual del evento</span>
+      <h2 class="section-title reveal">Galería</h2>
+      <div class="gold-rule reveal"></div>
+      <p class="lead-text reveal">
+        Imágenes capturadas durante la visita, desde la arquitectura del espacio hasta las piezas
+        de diseño y los prototipos de los estudiantes.
+      </p>
+
+      <!-- Bootstrap Carousel -->
+      <div id="carouselGaleria" class="carousel slide carousel-fade carousel-custom mt-5 reveal"
+           data-bs-ride="carousel" data-bs-interval="4000">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/chandelier1.jpg" class="d-block w-100" alt="Anillos de luz dorada en el lobby" />
+            <div class="carousel-caption">
+              <h5>Instalación lumínica</h5>
+              <p>Anillos dorados con marquesinas en el lobby principal del evento.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/garment.jpg" class="d-block w-100" alt="Pieza de diseño en maniquí" />
+            <div class="carousel-caption">
+              <h5>Diseño de moda</h5>
+              <p>Pieza experimental con mezcla de materiales en maniquí de exhibición.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/statue.jpg" class="d-block w-100" alt="Estatua clásica de mármol" />
+            <div class="carousel-caption">
+              <h5>Escultura clásica</h5>
+              <p>Figura femenina en mármol que ambientaba el espacio con referentes históricos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/chandelier2.jpg" class="d-block w-100" alt="Lámpara de cristal con marco dorado" />
+            <div class="carousel-caption">
+              <h5>Detalle arquitectónico</h5>
+              <p>Lámpara de cristal con medallón dorado en relieve sobre el techo.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselGaleria" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselGaleria" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div><!-- /carousel -->
+
+      <!-- Mosaic grid: clic abre modal -->
+      <div class="mosaic-grid mt-3 reveal">
+        <div class="m-item mosaic-click"
+             data-bs-toggle="modal" data-bs-target="#modalGaleria"
+             data-src="img/sketch.jpg" data-title="Prototipo en papel">
+          <img src="img/sketch.jpg" alt="Sketch wireframe en cuaderno" />
+          <div class="mosaic-overlay"><span>Prototipo en papel</span></div>
+        </div>
+        <div class="m-item tall mosaic-click"
+             data-bs-toggle="modal" data-bs-target="#modalGaleria"
+             data-src="img/statue.jpg" data-title="Escultura clásica">
+          <img src="img/statue.jpg" alt="Estatua de mármol" />
+          <div class="mosaic-overlay"><span>Escultura clásica</span></div>
+        </div>
+        <div class="m-item mosaic-click"
+             data-bs-toggle="modal" data-bs-target="#modalGaleria"
+             data-src="img/chandelier2.jpg" data-title="Detalle arquitectónico">
+          <img src="img/chandelier2.jpg" alt="Lámpara de cristal" />
+          <div class="mosaic-overlay"><span>Detalle arquitectónico</span></div>
+        </div>
+        <div class="m-item mosaic-click"
+             data-bs-toggle="modal" data-bs-target="#modalGaleria"
+             data-src="img/garment.jpg" data-title="Diseño de moda">
+          <img src="img/garment.jpg" alt="Pieza de moda en maniquí" />
+          <div class="mosaic-overlay"><span>Diseño de moda</span></div>
+        </div>
+        <div class="m-item mosaic-click"
+             data-bs-toggle="modal" data-bs-target="#modalGaleria"
+             data-src="img/whiteboard.jpg" data-title="Planificación del sitio web">
+          <img src="img/whiteboard.jpg" alt="Tablero con estructura del sitio" />
+          <div class="mosaic-overlay"><span>Planificación web</span></div>
+        </div>
+      </div><!-- /mosaic -->
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- Bootstrap Modal: imagen ampliada -->
+  <div class="modal fade" id="modalGaleria" tabindex="-1"
+       aria-labelledby="modalGaleriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalGaleriaLabel">Galería</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img id="modalImg" src="" alt="Imagen ampliada" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       TEORÍA DEL COLOR
+  ══════════════════════════════════════════════════ -->
+  <section id="teoria" class="section-pad">
+    <div class="container">
+      <span class="eyebrow reveal">Conferencia · Sara Viloria</span>
+      <h2 class="section-title reveal">Teoría &amp; Semiología<br/>del Color</h2>
+      <div class="gold-rule reveal"></div>
+
+      <!-- Paleta de colores -->
+      <div class="color-swatches reveal">
+        <div class="swatch" style="background:#1A1A1A; color:#fff;">
+          <span class="swatch-name" style="color:rgba(255,255,255,.75)">Negro noche</span>
+          <span class="swatch-code" style="color:rgba(255,255,255,.4)">#1A1A1A</span>
+        </div>
+        <div class="swatch" style="background:#8B1A2B; color:#fff;">
+          <span class="swatch-name">Rojo vino</span>
+          <span class="swatch-code" style="color:rgba(255,255,255,.45)">#8B1A2B</span>
+        </div>
+        <div class="swatch" style="background:#C9A84C; color:#1A1A1A;">
+          <span class="swatch-name">Oro Pantone</span>
+          <span class="swatch-code" style="color:rgba(0,0,0,.45)">#C9A84C</span>
+        </div>
+        <div class="swatch" style="background:#F0EAD6; color:#1A1A1A; outline:1px solid #d9d0b8;">
+          <span class="swatch-name">Crema</span>
+          <span class="swatch-code" style="color:rgba(0,0,0,.4)">#F0EAD6</span>
+        </div>
+        <div class="swatch" style="background:#4A3728; color:#fff;">
+          <span class="swatch-name" style="color:#e2c97a">Café oscuro</span>
+          <span class="swatch-code" style="color:rgba(255,255,255,.4)">#4A3728</span>
+        </div>
+        <div class="swatch" style="background:#5B7FBF; color:#fff;">
+          <span class="swatch-name">Azul noche</span>
+          <span class="swatch-code" style="color:rgba(255,255,255,.45)">#5B7FBF</span>
+        </div>
+        <div class="swatch" style="background:#E8C840; color:#1A1A1A;">
+          <span class="swatch-name">Amarillo</span>
+          <span class="swatch-code" style="color:rgba(0,0,0,.45)">#E8C840</span>
+        </div>
+        <div class="swatch" style="background:#FAF7F0; color:#1A1A1A; outline:1px solid #d9d0b8;">
+          <span class="swatch-name">Blanco hueso</span>
+          <span class="swatch-code" style="color:rgba(0,0,0,.4)">#FAF7F0</span>
+        </div>
+      </div>
+
+      <!-- Conceptos clave -->
+      <div class="teoria-items">
+        <div class="t-row reveal">
+          <h4>Teoría del color</h4>
+          <p>La rueda cromática establece relaciones entre colores primarios, secundarios y terciarios.
+          Los esquemas armónicos —complementarios, análogos, triádicos— son herramientas fundamentales
+          tanto para moda como para paletas de interfaz digital. <em>The color wheel establishes
+          relationships between primary, secondary and tertiary colors, providing the grammar for
+          harmonious visual composition.</em></p>
+        </div>
+        <div class="t-row reveal">
+          <h4>Semiología visual</h4>
+          <p>Cada color porta significados culturales y emocionales. El rojo activa urgencia o pasión;
+          el dorado comunica lujo y autoridad; el crema transmite calidez. En UX, conocer esta gramática
+          determina cómo el usuario percibe y confía en un producto. <em>Every color carries cultural
+          and emotional meanings. In UX, understanding this grammar shapes how users perceive and trust
+          a product.</em></p>
+        </div>
+        <div class="t-row reveal">
+          <h4>Sistema Pantone</h4>
+          <p>Pantone es el idioma universal del color: garantiza consistencia entre diseñadores,
+          impresores y fabricantes en distintos países y materiales. En FrontEnd su equivalente son
+          los design tokens: variables CSS que aseguran coherencia visual en toda la aplicación.
+          <em>Pantone is the universal language of color; in frontend development, design tokens
+          serve the same purpose.</em></p>
+        </div>
+        <div class="t-row reveal">
+          <h4>Color en UX</h4>
+          <p>El contraste de color determina accesibilidad (WCAG AA/AAA). El color guía la jerarquía
+          visual: qué leer primero, qué botón presionar, qué información es crítica. Una paleta bien
+          construida reduce la carga cognitiva y mejora la usabilidad. <em>Color contrast determines
+          accessibility. A well-built palette reduces cognitive load and improves usability.</em></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       GLOSARIO TÉCNICO
+  ══════════════════════════════════════════════════ -->
+  <section id="glosario" class="section-pad-sm">
+    <div class="container">
+      <span class="eyebrow reveal">Technical glossary</span>
+      <h2 class="section-title reveal">Glosario Técnico</h2>
+      <div class="gold-rule reveal"></div>
+      <p class="lead-text reveal">Términos técnicos aprendidos durante el evento Moda ECCI.</p>
+
+      <input type="search" id="glossarySearch" class="glosario-search reveal mt-4"
+             placeholder="🔍  Buscar término... / Search term..." />
+      <p id="glossaryEmpty" class="text-danger small" style="display:none;">
+        No se encontraron resultados.
+      </p>
+
+      <div class="table-responsive reveal">
+        <table class="glossary-table">
+          <thead>
+            <tr>
+              <th>English</th>
+              <th>Español</th>
+              <th>Definición</th>
+            </tr>
+          </thead>
+          <tbody id="glossaryBody">
+            <tr><td>Color Theory</td><td>Teoría del color</td><td>Estudio de cómo los colores interactúan entre sí y generan percepción visual y emocional.</td></tr>
+            <tr><td>Pantone</td><td>Pantone</td><td>Sistema estandarizado de identificación y reproducción del color utilizado globalmente.</td></tr>
+            <tr><td>Semiology</td><td>Semiología</td><td>Ciencia que estudia los signos y su significado dentro de un sistema cultural o comunicativo.</td></tr>
+            <tr><td>Color Palette</td><td>Paleta de colores</td><td>Conjunto seleccionado de colores que definen la identidad visual de un proyecto o marca.</td></tr>
+            <tr><td>Complementary Colors</td><td>Colores complementarios</td><td>Pares de colores opuestos en la rueda cromática que generan máximo contraste visual.</td></tr>
+            <tr><td>UX Design</td><td>Diseño de experiencia de usuario</td><td>Disciplina que diseña la interacción entre el usuario y un producto digital para hacerla intuitiva.</td></tr>
+            <tr><td>Accessibility</td><td>Accesibilidad</td><td>Principio de diseño que garantiza que los productos digitales sean utilizables por todas las personas.</td></tr>
+            <tr><td>Design Token</td><td>Token de diseño</td><td>Variable que almacena un valor de diseño (color, tipografía, espaciado) para reutilizarse en código.</td></tr>
+            <tr><td>Responsive Design</td><td>Diseño responsive</td><td>Técnica que adapta la presentación de un sitio web a diferentes tamaños de pantalla.</td></tr>
+            <tr><td>Circular Economy</td><td>Economía circular</td><td>Modelo económico que elimina el desperdicio y mantiene los recursos en uso el mayor tiempo posible.</td></tr>
+            <tr><td>Sustainable Fashion</td><td>Moda sostenible</td><td>Enfoque de producción textil que minimiza el impacto ambiental y social de la industria.</td></tr>
+            <tr><td>Typography</td><td>Tipografía</td><td>Arte y técnica de componer texto con tipos de letra para comunicar con efectividad visual.</td></tr>
+            <tr><td>Visual Hierarchy</td><td>Jerarquía visual</td><td>Organización de elementos para guiar la atención del usuario en un orden determinado.</td></tr>
+            <tr><td>Wireframe</td><td>Esquema de interfaz</td><td>Boceto estructural de bajo nivel que muestra la disposición de elementos en una página.</td></tr>
+            <tr><td>GitHub Pages</td><td>GitHub Pages</td><td>Servicio gratuito de hosting estático que publica sitios web directamente desde repositorios Git.</td></tr>
+            <tr><td>Color Harmony</td><td>Armonía cromática</td><td>Combinación de colores que produce una sensación de equilibrio y coherencia visual.</td></tr>
+            <tr><td>Upcycling</td><td>Suprareciclaje</td><td>Proceso de transformar materiales de desecho en nuevos productos de mayor calidad o valor.</td></tr>
+            <tr><td>Bootstrap</td><td>Bootstrap</td><td>Framework CSS de código abierto que facilita el desarrollo de sitios web responsivos.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       SOSTENIBILIDAD
+  ══════════════════════════════════════════════════ -->
+  <section id="sostenibilidad" class="section-pad">
+    <div class="container">
+      <span class="eyebrow reveal">Reflexión final · Conclusion</span>
+      <h2 class="section-title reveal">Tecnología, sostenibilidad<br/>&amp; economía circular</h2>
+      <div class="gold-rule reveal"></div>
+      <p class="lead-text reveal">
+        La industria de la moda es la segunda más contaminante del mundo. Eventos como Moda ECCI
+        demuestran que el diseño tiene responsabilidad ética: las elecciones de materiales, procesos
+        y comunicación visual pueden impulsar la transición hacia una economía circular.
+      </p>
+      <p class="lead-text reveal mt-3">
+        <em>The fashion industry is the world's second most polluting. Events like Moda ECCI show
+        that design carries an ethical responsibility: choices about materials, processes, and visual
+        communication can drive the transition toward a circular economy.</em>
+      </p>
+
+      <div class="pillars-grid">
+        <div class="pillar reveal">
+          <div class="pillar-num">01</div>
+          <h4>Reducción de residuos</h4>
+          <p>El desarrollo de plataformas digitales puede apoyar la moda circular mediante catálogos
+          digitales que eliminan muestras físicas, trazabilidad textil con tecnología blockchain y
+          marketplaces de intercambio de prendas.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">02</div>
+          <h4>Reutilización &amp; upcycling</h4>
+          <p>Las prendas exhibidas en el evento integraban materiales reutilizados con estética
+          contemporánea, demostrando que la economía circular no sacrifica el valor estético ni
+          el impacto visual de una colección.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">03</div>
+          <h4>Optimización de recursos</h4>
+          <p>Código eficiente, imágenes comprimidas y hosting verde son el equivalente digital
+          de la producción sostenible: menos consumo energético, menor huella de carbono y
+          mayor impacto positivo en el entorno.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">04</div>
+          <h4>Producción sostenible</h4>
+          <p>Incorporar principios de sostenibilidad desde el diseño —no como corrección posterior—
+          es la base de una industria textil responsable. Lo mismo aplica al desarrollo de software:
+          el diseño sostenible empieza en el brief.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">05</div>
+          <h4>Impacto ambiental positivo</h4>
+          <p>La tecnología puede medir, comunicar y reducir el impacto ambiental de la moda.
+          Aplicaciones de huella de carbono, etiquetas digitales y reportes de trazabilidad
+          son ejemplos de cómo el software impulsa la sostenibilidad.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">06</div>
+          <h4>Responsabilidad organizacional</h4>
+          <p>Las organizaciones que participan en eventos como Moda ECCI demuestran compromiso
+          con la formación de talento consciente. La responsabilidad social también se construye
+          educando con criterio ético y visión de futuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer>
+    <p class="foot-logo">Moda ECCI</p>
+    <p class="foot-sub">Lenguaje del Color · SENA CMTC · <span id="currentYear"></span></p>
+    <ul class="foot-links">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#teoria">Color</a></li>
+      <li><a href="#glosario">Glosario</a></li>
+      <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+    </ul>
+    <p class="foot-copy">
+      Actividad académica ADSO · Competencia FrontEnd · Centro de Manufactura en Textil y Cuero
+    </p>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button id="btnTop" title="Volver arriba"
+          style="position:fixed;bottom:28px;right:28px;z-index:999;
+                 background:var(--gold);border:none;color:#1A1A1A;
+                 width:44px;height:44px;font-size:1.2rem;cursor:pointer;
+                 opacity:0;transition:opacity .3s;box-shadow:0 4px 14px rgba(0,0,0,.25);">
+    ↑
+  </button>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript propio -->
+  <script src="js/app.js"></script>
+</body>
+</html>
