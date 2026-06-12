@@ -1,11 +1,6 @@
-/* ============================================================
-   MODA ECCI — main.js
-   Autor: Aprendiz ADSO | SENA CMTC
-   ============================================================ */
 
 "use strict";
 
-/* ── 1. NAVBAR: cambio de opacidad al hacer scroll ─────────── */
 (function initNavbar() {
   const nav = document.getElementById("mainNav");
   if (!nav) return;
@@ -20,7 +15,6 @@
 })();
 
 
-/* ── 2. SCROLL REVEAL con IntersectionObserver ──────────────── */
 (function initReveal() {
   const elements = document.querySelectorAll(".reveal");
   if (!elements.length) return;
@@ -41,10 +35,8 @@
 })();
 
 
-/* ── 3. ALERTA de bienvenida (Bootstrap Alert) ──────────────── */
 (function initAlert() {
-  // La alerta se muestra automáticamente al cargar.
-  // La ocultamos si el usuario ya la cerró en esta sesión.
+
   const hidden = sessionStorage.getItem("alertClosed");
   const alertEl = document.getElementById("alertBienvenida");
   if (!alertEl) return;
@@ -59,7 +51,6 @@
 })();
 
 
-/* ── 4. GALERÍA MODAL: abrir imagen en modal Bootstrap ──────── */
 (function initGalleryModal() {
   const mosaicItems = document.querySelectorAll(".mosaic-click");
   const modalImg    = document.getElementById("modalImg");
@@ -77,7 +68,7 @@
 })();
 
 
-/* ── 5. BUSCADOR DE GLOSARIO ────────────────────────────────── */
+
 (function initGlossarySearch() {
   const input = document.getElementById("glossarySearch");
   if (!input) return;
@@ -96,7 +87,6 @@
       }
     });
 
-    // Mensaje si no hay resultados
     const noResult = document.getElementById("glossaryEmpty");
     const visible  = [...rows].filter((r) => !r.classList.contains("row-hidden"));
     if (noResult) {
@@ -105,8 +95,6 @@
   });
 })();
 
-
-/* ── 6. BOTÓN "volver arriba" ───────────────────────────────── */
 (function initBackToTop() {
   const btn = document.getElementById("btnTop");
   if (!btn) return;
@@ -122,8 +110,42 @@
 })();
 
 
-/* ── 7. AÑO DINÁMICO en el footer ──────────────────────────── */
+
 (function setYear() {
   const el = document.getElementById("currentYear");
   if (el) el.textContent = new Date().getFullYear();
 })();
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const cardContent = document.querySelector('.card-content');
+
+    // Función que simula el cambio de contenido con una transición suave
+    function triggerSlideChange() {
+        cardContent.style.opacity = '0.3';
+        cardContent.style.transform = 'translateX(-10px)';
+        cardContent.style.transition = 'all 0.2s ease';
+
+        setTimeout(() => {
+            cardContent.style.opacity = '1';
+            cardContent.style.transform = 'translateX(0)';
+        }, 200);
+    }
+
+    prevBtn.addEventListener('click', () => {
+        console.log('Canción anterior...');
+        triggerSlideChange();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        console.log('Siguiente canción...');
+        triggerSlideChange();
+    });
+});
